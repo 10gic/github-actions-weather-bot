@@ -6,7 +6,7 @@ const bot = new Telegram(process.env.TELEGRAM_TOKEN)
 const weatherToken = process.env.WEATHER_API_TOKEN
 
 const weatherURL = new URL('https://api.openweathermap.org/data/2.5/weather')
-weatherURL.searchParams.set('zip', '78747,us')
+weatherURL.searchParams.set('zip', '100000,cn')
 weatherURL.searchParams.set('APPID', weatherToken)
 weatherURL.searchParams.set('units', 'imperial')
 
